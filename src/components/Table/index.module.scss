@@ -1,0 +1,50 @@
+.table {
+  width: 100%;
+  table-layout: fixed;
+  td,
+  th {
+    padding: 8px;
+    border: 1px solid #ddd;
+    &:first-child {
+      border-left: none;
+    }
+    &:last-child {
+      border-right: none;
+    }
+  }
+  th {
+    padding: 8px;
+    text-align: left;
+    color: gray;
+  }
+  tbody {
+    tr {
+      &:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+}
+
+.new {
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  color: gray;
+  &:hover {
+    background-color: #dadada;
+  }
+}
+
+.pagination {
+  display: flex;
+  padding: 8px 0;
+  justify-content: flex-end;
+  align-items: center;
+  > button {
+    margin-left: 10px;
+  }
+}
